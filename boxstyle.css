@@ -1,0 +1,102 @@
+body{
+    min-height: 1080px;
+    border: 8px solid rgb(38, 19, 68);
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.box1{
+    text-align: center;
+    height: 250px;
+    width: 45%;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 30px;    
+    perspective: 1000px;
+}
+.box1inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.box1:hover .box1inner{
+    transform: rotateX(180deg);
+}
+.box1front, .box1back{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.box1front{
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    background: radial-gradient(circle, #552e9e, #000000);
+    border-radius: 2rem;
+    font-size: 20px;    
+}
+.box1back{
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(to top, #f8ce45, #ffffff);
+    border-radius: 2rem;
+    font-size: 20px;
+    transform: rotateX(180deg);    
+}
+.boxH{
+    height: 300px;
+    width: 96%;
+    background-color: darkslategrey;
+    border-radius: 2rem;
+    font-size: 25px; 
+    color: white;
+}
+.wrapper{
+    padding: 0 15;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-around;
+    gap: 5rem;
+}
+.info{
+    flex: 1;
+}
+.headline{
+    height: 100px;
+    width: 75%;
+    margin-top: 50px;
+    background-color:transparent;
+    border-color: rgb(61, 106, 124);
+    border-style: double;
+    border-radius: 2rem;
+    font-size: 65px; 
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.vid{
+    text-align: center;
+    align-content: center;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 45%;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 30px;    
+    perspective: 1000px;
+}
